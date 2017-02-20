@@ -79,7 +79,7 @@ grid on;
 %Plotando Hz
 figure
 plot(wz/pi, 20*log10(abs(Hz(exp(1j*wz))))); hold on;
-plot([Ws1 Wp1 Ws2 Wp2]/pi, [-As -Ap -As -Ap]+G0, '+r');hold off;
+plot([ls1 lp1 ls2 lp2]/pi, [-As -Ap -As -Ap]+G0, '+r');hold off;
 ylim([-70 0]);
 legend('Filtro digital H(z)')
 ylabel(['Magnitude em dB'],'interpreter','latex')
